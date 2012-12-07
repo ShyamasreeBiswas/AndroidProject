@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, FlightTicketReservationActivity!</string>
+    <string name="app_name">FlightTicketReservation</string>
+    <string name="airlines">ABC Airlines</string>
+    <string name="credit">Credit Card No</string>
+    <string name="expdate">Exp. Date</string>
+    <string name="confirm_code">Your Confirmation code is : 3456</string>
+    <string name="thank">Thank you for Choosing ABC.</string>
+    <string name="speak">Speak Now</string>
+</resources>

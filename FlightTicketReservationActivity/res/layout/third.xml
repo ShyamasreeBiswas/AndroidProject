@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+    
+    <include android:id="@+id/top_layout" layout="@layout/top_include"/>
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true" android:gravity="center" android:layout_marginTop="20dp"
+    
+            android:layout_below="@+id/top_layout" android:id="@+id/below_layout">
+    
+    <TextView
+            android:id="@+id/FlightNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dsfd" android:textSize="17sp" android:textColor="@color/black">
+        </TextView>
+        
+        <TextView
+            android:id="@+id/FromCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/FlightNumber"
+             android:text="dsfd" android:textSize="17sp" android:textColor="@color/black"
+             android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/DestinationCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/FromCity"
+             android:text="dsfd" android:textSize="17sp" android:textColor="@color/black"
+             android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_below="@+id/DestinationCity"
+             android:textSize="17sp" android:textColor="@color/black"
+             android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/Date"
+            android:textSize="17sp" android:textColor="@color/black"
+             android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/Time"
+            android:textSize="17sp" android:textColor="@color/black"
+             android:layout_marginTop="10dp">
+        </TextView>
+
+   </RelativeLayout>
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/TextView01"
+        android:text="Select" android:background="@color/nav_blue"
+        android:textColor="@color/white" android:textStyle="bold"
+        android:layout_below="@id/below_layout" android:layout_marginTop="15dp"/>
+        
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/speak"
+        android:src="@android:drawable/ic_btn_speak_now" 
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+

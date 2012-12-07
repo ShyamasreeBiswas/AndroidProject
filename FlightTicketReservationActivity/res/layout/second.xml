@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <include android:id="@+id/top_layout" layout="@layout/top_include"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:ems="10" android:layout_marginTop="20dp"
+        android:inputType="text" android:layout_toLeftOf="@+id/frombtnSpeak"/>
+    <ImageButton
+        android:id="@+id/frombtnSpeak"
+        android:layout_width="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/speak"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_btn_speak_now" 
+        android:layout_below="@id/top_layout"/>
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10" android:layout_below="@id/editText2"
+        android:inputType="text" android:layout_toLeftOf="@+id/tobtnSpeak"/>
+        
+     <ImageButton
+        android:id="@+id/tobtnSpeak"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/speak"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_btn_speak_now" 
+        android:layout_below="@id/editText2"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="From" android:layout_below="@id/top_layout"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_toLeftOf="@id/editText2" android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="To" android:layout_below="@id/editText2"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_toLeftOf="@id/EditText01" android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Departure Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"        
+        android:layout_below="@id/EditText01"        
+        android:layout_marginTop="10dp" android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/timePicker1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/DepartureDate"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/TextView02" 
+        android:layout_centerHorizontal="true"
+        android:text="Select Time"
+        android:background="@color/nav_blue"
+        android:textColor="@color/white"/>
+        
+     <ImageButton
+        android:id="@+id/timebtnSpeak"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/speak"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_btn_speak_now" 
+        android:layout_below="@+id/DepartureDate"
+        android:layout_marginTop="10dp" android:visibility="invisible"/>
+        
+     <ImageButton
+        android:id="@+id/datebtnSpeak"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/speak"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_btn_speak_now" 
+        android:layout_below="@id/EditText01"
+        android:layout_marginTop="10dp" android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/DepartureDate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/EditText01"
+        android:layout_marginTop="10dp" android:layout_toRightOf="@id/textView2"
+        android:layout_centerVertical="true"
+        android:text="Select Date" 
+        android:background="@color/nav_blue"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="32dp"
+        android:text="Departure Time"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="NEXT" android:textColor="@color/white"
+        android:textStyle="bold" android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" android:background="@color/nav_blue"
+        />
+        
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/speak"
+        android:src="@android:drawable/ic_btn_speak_now"        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+</LinearLayout>
